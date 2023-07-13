@@ -95,6 +95,7 @@ public class CalculatorController {
                 screen.setText(number1 / number2 + "");
             }
             case "^" -> screen.setText(Math.pow(number1,number2) + "");
+            default -> {}
         }
         op = "";
     }
