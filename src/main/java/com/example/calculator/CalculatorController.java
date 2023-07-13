@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
+import static jdk.internal.org.jline.utils.Log.error;
+
 public class CalculatorController {
 
 
@@ -95,6 +97,7 @@ public class CalculatorController {
                 screen.setText(number1 / number2 + "");
             }
             case "^" -> screen.setText(Math.pow(number1,number2) + "");
+            default -> error();
         }
         op = "";
     }
